@@ -1,0 +1,70 @@
+/* Hier kann man kommentieren, Quellenangaben
+CSS Selector:
+Wenn nix davor, dann HTML-Element
+Wenn Punkt davor, dann Class
+Wenn # davor, dann ID
+Schachtelung möglich (siehe nav button)
+----------------------------*/
+
+/* Typo */
+body {
+    font-family: "Roboto", sans-serif;
+}
+h1 {
+    font-weight: bold;
+    font-size: 28px;
+}
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+h3 {
+    font-weight: bold;
+    font-size: 16px;
+}
+p {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+/* Spezielles für Navigation Buttons */
+nav {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav button {
+    color: var(--white-color);
+    background-color: var(--darkgrey-color);
+}
+nav button:hover {
+    color: var(--white-color);
+    background-color: var(--normalred-color);
+}
+
+/* Links */
+a {
+    color: var(--normalred-color);
+}
+
+a:hover {
+    color: var(--normalred-color);
+}
+
+/* Spezielles für den Footer */
+footer {
+    background-color: var(--normalgrey-color);
+}
+
+footer a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+#imprint a:hover {
+    color: var(--normalred-color);
+}
+
+/* Weitere Bereiche zum Ergänzen */
+/* Weitere Bereiche zum Ergänzen */
