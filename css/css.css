@@ -37,12 +37,24 @@ nav {
 nav button {
     color: var(--white-color);
     background-color: var(--darkgrey-color);
+    width: 100%;
+
 }
 nav button:hover {
     color: var(--white-color);
     background-color: var(--normalred-color);
 }
 
+.subitems{
+    display: none;
+    z-index: 50;
+    position: absolute;
+    background-color: var(--lightgrey-color);
+}
+
+.subitems button:hover{
+    color: var(--white-color);
+}
 /* Links */
 a {
     color: var(--normalred-color);

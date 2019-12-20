@@ -28,19 +28,19 @@
 
     <script>
         function showmenue(button, i) {
-            var button = button.getBoundingClientRect();
-            var subitemsDiv = document.getElementById("subitems"+i);
-            subitemsDiv.style.left= "0px";
-            subitemsDiv.style.top= button.top+button.height+"px";
-            subitemsDiv.style.display="inline-block";
-            var spans = subitemsDiv.getElementsByTagName('button');
-            for (let item of spans){
-                item.style.width = button.width+"px";
-                item.style.margin = 0+"px";
-            }
+          var button = button.getBoundingClientRect();
+          var subitemsDiv = document.getElementById("subitems"+i);
+          subitemsDiv.style.left= "0px";
+          subitemsDiv.style.top= button.top+button.height+"px";
+          subitemsDiv.style.display="inline-block";
+          var spans = subitemsDiv.getElementsByTagName('button');
+          for (let item of spans){
+            item.style.width = button.width+"px";
+            item.style.margin = 0+"px";
+          }
         }
         function hidemenue (i) {
-            document.getElementById("subitems"+i).style.display="none";
+          document.getElementById("subitems"+i).style.display="none";
         }
     </script>
 </nav>
