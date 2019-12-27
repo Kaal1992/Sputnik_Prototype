@@ -78,5 +78,17 @@ footer a {
     color: var(--normalred-color);
 }
 
-/* Weitere Bereiche zum Ergänzen */
+/* Informationsseiten */
+
+.info-bigimage-responsive {
+    width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.info-smallimage {
+    width: 100%
+}
+
 /* Weitere Bereiche zum Ergänzen */
