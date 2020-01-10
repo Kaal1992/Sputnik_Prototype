@@ -33,6 +33,7 @@ h4 {
     color: var(--normalred-color);
     text-align: center;
 }
+
 /* p ist der normale Text */
 p {
     font-weight: normal;
