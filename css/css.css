@@ -16,6 +16,7 @@ h1 {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
 h2 {
     font-weight: bold;
     font-size: 20px;
@@ -34,12 +35,20 @@ h4 {
     text-align: center;
 }
 
+
 /* p ist der normale Text */
 p {
     font-weight: normal;
     font-size: 16px;
 }
 
+/* h2 ohne Absatz für Impressumseite */
+kontakt {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 /* Spezielles für Navigation Buttons */
 nav {

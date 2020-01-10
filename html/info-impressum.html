@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <html lang="de" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
@@ -11,9 +10,78 @@
     <link rel="stylesheet" href="../css/grid.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/css.css">
-    <title>Sputnik Startseite</title>
+    <title>Sputnik Impressumseite</title>
 </head>
-<body>
+<body class="container">
+<div class="flex">
+    <img src="../img/sputniklogo_final.png">
+</div>
+<br>
+<nav>
+    <div class="one-third column" id="erster menuepunkt" onmouseleave="hidemenue(1)">
+        <button onmouseover="showmenue(this, 1)">Sputnik</button>
+        <div class="subitems" id="subitems1" >
+            <button>Geschichte</button><br/>
+            <button>Kontakt</button><br/>
+            <button>Räumlichkeiten mieten</button><br/>
+        </div>
+    </div>
+    <div class="one-third column" id="zweiter menuepunkt" onmouseleave="hidemenue(2)">
+        <button onmouseover="showmenue(this, 2)">Filme</button>
+        <div class="subitems" id="subitems2" >
+            <button>Programm</button><br/>
+            <button>Preisübersicht</button><br/>
+            <button>Ticket-Schnellkauf</button><br/>
+        </div>
+    </div>
+    <div class="one-third column" id="dritter menuepunkt" onmouseleave="hidemenue(3)">
+        <button onmouseover="showmenue(this, 3)">Events</button>
+        <div class="subitems" id="subitems3" >
+            <button>Open Screening</button><br/>
+            <button>Festivals</button><br/>
+            <button>Specials</button><br/>
+        </div>
+    </div>
+
+
+    <script>
+        function showmenue(button, i) {
+            var button = button.getBoundingClientRect();
+            var subitemsDiv = document.getElementById("subitems"+i);
+            subitemsDiv.style.left= "0px";
+            subitemsDiv.style.top= button.top+button.height+"px";
+            subitemsDiv.style.display="inline-block";
+            var spans = subitemsDiv.getElementsByTagName('button');
+            for (let item of spans){
+                item.style.width = button.width+"px";
+                item.style.margin = 0+"px";
+            }
+        }
+        function hidemenue (i) {
+            document.getElementById("subitems"+i).style.display="none";
+        }
+    </script>
+</nav>
+<h1>Impressum</h1>
+<h2>Sputnik-Kino, Höfe am Südstern</h2>
+<kontakt>Adresse</kontakt>
+<p>
+    Veranstaltungsservice & Medienagentur <br>
+    Andrea Stosiek <br>
+    Hasenheide 54 <br>
+    10967 Berlin
+</p>
+<kontakt>Telefon</kontakt>
+<p>030 694 11 47</p>
+<kontakt>E-Mail</kontakt>
+<p>post@sputnik-kino.com</p>
+<kontakt>UstNr</kontakt>
+<p>31/548/61582</p>
+<kontakt>Facebook</kontakt>
+<p> <a href="https://www.facebook.com/sputnik.kino.berlin" target="_blank">https://www.facebook.com/sputnik.kino.berlin</a></p>
+
+</body>
+
 <footer class="row">
     <div class="one-third column">
         <h2>Sputnik Kino</h2>
@@ -37,5 +105,4 @@
         <img src="../img/freiluftkino-logo.png" height="112" />
     </div>
 </footer>
-</body>
 </html>
