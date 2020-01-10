@@ -84,18 +84,18 @@ footer a {
 
 /* Informationsseiten */
 
-.info-bigimage-responsive {
+.bigimage-responsive {
     width: 100%;
     max-height: 100%;
     display: block;
     margin: auto;
 }
 
-.info-smallimage {
+.smallimage-responsive {
     width: 100%
 }
 
-/* Startseite */
+/* Startseite FUNKTIONIERT NOCH NICHT */
 
 .h1überschrift h1 {
     color: var(--darkred-color);
