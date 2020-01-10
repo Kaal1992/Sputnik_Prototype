@@ -13,14 +13,10 @@ body {
 h1 {
     font-weight: bold;
     font-size: 28px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 h2 {
     font-weight: bold;
     font-size: 20px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 h3 {
     font-weight: bold;
@@ -84,23 +80,15 @@ footer a {
 
 /* Informationsseiten */
 
-.bigimage-responsive {
+.info-bigimage-responsive {
     width: 100%;
     max-height: 100%;
     display: block;
     margin: auto;
 }
 
-.smallimage-responsive {
+.info-smallimage {
     width: 100%
 }
-
-/* Startseite FUNKTIONIERT NOCH NICHT */
-
-.h1überschrift h1 {
-    color: var(--darkred-color);
-    align: center;
-}
-
 
 /* Weitere Bereiche zum Ergänzen */

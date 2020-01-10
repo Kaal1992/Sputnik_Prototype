@@ -44,8 +44,7 @@
         function showmenue(button, i) {
             var button = button.getBoundingClientRect();
             var subitemsDiv = document.getElementById("subitems"+i);
-            var pos = button.positionX - button.width;
-            subitemsDiv.style.left= pos;
+            subitemsDiv.style.left= "0px";
             subitemsDiv.style.top= button.top+button.height+"px";
             subitemsDiv.style.display="inline-block";
             var spans = subitemsDiv.getElementsByTagName('button');
@@ -60,7 +59,7 @@
     </script>
 </nav>
 
-<h1 id="h1überschirft"> Heutige Filme</h1>
+<h1>Überschrift 28</h1>
 <h2>Überschrift 20, bold</h2>
 <p>Normaler Text <a href="https://www.google.de" target="_blank">google</a></p>
 
