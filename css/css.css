@@ -91,21 +91,4 @@ footer a {
     width: 100%
 }
 
-
 /* Weitere Bereiche zum Ergänzen */
-#box {
-    background-color: var(--normalgrey-color);
-}
-
-.box a {
-    width:50%;
-    height:50%;
-    background-color: var(--lightgrey-color);
-    float:left
-}
-
-.flex {
-   display: flex;
-    justify-content: center;
-    align-items: center;
-}
