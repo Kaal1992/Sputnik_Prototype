@@ -24,16 +24,16 @@ h3 {
     font-weight: bold;
     font-size: 16px;
 }
-
+/* h4 speziell für Startseite */
 h4 {
     font-weight: bold;
     font-size: 28px;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    color: var(--darkred-color);
-    align: center;
+    color: var(--normalred-color);
+    text-align: center;
 }
-
+/* p ist der normale Text */
 p {
     font-weight: normal;
     font-size: 16px;
@@ -92,15 +92,18 @@ footer a {
 
 /* Informationsseiten */
 
-.info-bigimage-responsive {
+.bigimage-responsive {
     width: 100%;
     max-height: 100%;
     display: block;
     margin: auto;
 }
 
-.info-smallimage {
+.smallimage-responsive {
     width: 100%
 }
 
-/* Weitere Bereiche zum Ergänzen */
+/* Speziell Startseite */
+.grauerhintergrund {
+    background-color: var(--normalgrey-color);
+}
