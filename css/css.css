@@ -108,6 +108,10 @@ footer a {
     background-color: var(--normalgrey-color);
 }
 
+.hellgrauerhintergrund {
+    background-color: var(--lightgrey-color);
+}
+
 .flex {
     display: flex;
     justify-content: center;
