@@ -25,7 +25,14 @@ h3 {
     font-weight: bold;
     font-size: 16px;
 }
-/* h4 speziell für Startseite */
+
+/* p ist der normale Text */
+p {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* h4 speziell für Startseite*/
 h4 {
     font-weight: bold;
     font-size: 28px;
@@ -35,11 +42,17 @@ h4 {
     text-align: center;
 }
 
+/* h2, h3 und p speziell für den Footer */
+footer h2 {
+    color: var(--white-color);
+}
 
-/* p ist der normale Text */
-p {
-    font-weight: normal;
-    font-size: 16px;
+footer h3 {
+    color: var(--white-color);
+}
+
+footer p {
+    color: var(--white-color);
 }
 
 /* h2 ohne Absatz für Impressumseite */
@@ -88,11 +101,11 @@ a:hover {
 
 /* Spezielles für den Footer */
 footer {
-    background-color: var(--normalgrey-color);
+    background-color: var(--darkgrey-color);
 }
 
 footer a {
-    color: var(--black-color);
+    color: var(--white-color);
     text-decoration: none;
 }
 
@@ -100,7 +113,8 @@ footer a {
     color: var(--normalred-color);
 }
 
-/* Informationsseiten */
+
+/* Responsive Bilder */
 
 .bigimage-responsive {
     width: 100%;
@@ -113,7 +127,7 @@ footer a {
     width: 100%
 }
 
-/* Speziell Startseite */
+/* Spezielles für Startseite */
 .grauerhintergrund {
     background-color: var(--normalgrey-color);
 }
@@ -127,3 +141,5 @@ footer a {
     justify-content: center;
     align-items: center;
 }
+
+/* neue Kategorie! */
