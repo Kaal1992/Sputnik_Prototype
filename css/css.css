@@ -16,21 +16,52 @@ h1 {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
 h2 {
     font-weight: bold;
     font-size: 20px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 h3 {
     font-weight: bold;
     font-size: 16px;
 }
+
+/* p ist der normale Text */
 p {
     font-weight: normal;
     font-size: 16px;
 }
 
+/* h4 speziell für Startseite*/
+h4 {
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--normalred-color);
+    text-align: center;
+}
+
+/* h2, h3 und p speziell für den Footer */
+footer h2 {
+    color: var(--white-color);
+}
+
+footer h3 {
+    color: var(--white-color);
+}
+
+footer p {
+    color: var(--white-color);
+}
+
+/* h2 ohne Absatz für Impressumseite */
+kontakt {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 /* Spezielles für Navigation Buttons */
 nav {
@@ -70,11 +101,11 @@ a:hover {
 
 /* Spezielles für den Footer */
 footer {
-    background-color: var(--normalgrey-color);
+    background-color: var(--darkgrey-color);
 }
 
 footer a {
-    color: var(--black-color);
+    color: var(--white-color);
     text-decoration: none;
 }
 
@@ -82,25 +113,33 @@ footer a {
     color: var(--normalred-color);
 }
 
-/* Informationsseiten */
 
-.info-bigimage-responsive {
+/* Responsive Bilder */
+
+.bigimage-responsive {
     width: 100%;
     max-height: 100%;
     display: block;
     margin: auto;
 }
 
-.info-smallimage {
+.smallimage-responsive {
     width: 100%
 }
 
-/* Startseite */
-
-.h1überschrift h1 {
-    color: var(--darkred-color);
-    align: center;
+/* Spezielles für Startseite */
+.grauerhintergrund {
+    background-color: var(--normalgrey-color);
 }
 
+.hellgrauerhintergrund {
+    background-color: var(--lightgrey-color);
+}
 
-/* Weitere Bereiche zum Ergänzen */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* neue Kategorie! */

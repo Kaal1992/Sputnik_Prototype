@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <html lang="de" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
@@ -11,9 +10,162 @@
     <link rel="stylesheet" href="../css/grid.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/css.css">
-    <title>Sputnik Startseite</title>
+    <title>Sputnik Impressumseite</title>
 </head>
-<body>
+<body class="container">
+<div class="flex">
+    <img src="../img/sputniklogo_final.png">
+</div>
+<br>
+<nav>
+    <div class="one-third column" id="erster menuepunkt" onmouseleave="hidemenue(1)">
+        <button onmouseover="showmenue(this, 1)">Sputnik</button>
+        <div class="subitems" id="subitems1" >
+            <button>Geschichte</button><br/>
+            <button>Kontakt</button><br/>
+            <button>Räumlichkeiten mieten</button><br/>
+        </div>
+    </div>
+    <div class="one-third column" id="zweiter menuepunkt" onmouseleave="hidemenue(2)">
+        <button onmouseover="showmenue(this, 2)">Filme</button>
+        <div class="subitems" id="subitems2" >
+            <button>Programm</button><br/>
+            <button>Preisübersicht</button><br/>
+            <button>Ticket-Schnellkauf</button><br/>
+        </div>
+    </div>
+    <div class="one-third column" id="dritter menuepunkt" onmouseleave="hidemenue(3)">
+        <button onmouseover="showmenue(this, 3)">Events</button>
+        <div class="subitems" id="subitems3" >
+            <button>Open Screening</button><br/>
+            <button>Festivals</button><br/>
+            <button>Specials</button><br/>
+        </div>
+    </div>
+
+
+    <script>
+        function showmenue(button, i) {
+            var button = button.getBoundingClientRect();
+            var subitemsDiv = document.getElementById("subitems"+i);
+            subitemsDiv.style.left= "0px";
+            subitemsDiv.style.top= button.top+button.height+"px";
+            subitemsDiv.style.display="inline-block";
+            var spans = subitemsDiv.getElementsByTagName('button');
+            for (let item of spans){
+                item.style.width = button.width+"px";
+                item.style.margin = 0+"px";
+            }
+        }
+        function hidemenue (i) {
+            document.getElementById("subitems"+i).style.display="none";
+        }
+    </script>
+</nav>
+<h1>Impressum</h1>
+<h2>Sputnik-Kino, Höfe am Südstern</h2>
+<div class="grauerhintergrund">
+    <div class="row">
+        <div class="one-half column">
+            <kontakt>Adresse</kontakt>
+            <p>
+                Veranstaltungsservice & Medienagentur <br>
+                Andrea Stosiek <br>
+                Hasenheide 54 <br>
+                10967 Berlin
+            </p>
+            <kontakt>Telefon</kontakt>
+            <p>030 694 11 47</p>
+            <kontakt>E-Mail</kontakt>
+            <p>post@sputnik-kino.com</p>
+        </div>
+        <div class="one-half column">
+            <kontakt>UstNr</kontakt>
+            <p>31/548/61582</p>
+            <kontakt>Facebook</kontakt>
+            <p> <a href="https://www.facebook.com/sputnik.kino.berlin" target="_blank">https://www.facebook.com/sputnik.kino.berlin</a></p>
+            <kontakt>Flickr</kontakt>
+            <p> <a href="https://www.flickr.com/photos/93581504@N02/" target="_blank">https://www.flickr.com/photos/93581504@N02/</a></p>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<h2>Inhalt des Onlineangebots</h2>
+<p>Der Autor übernimmt keinerlei Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens des Autors kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt. Alle Angebote sind freibleibend und unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.</p>
+<br>
+<h2>Verweise und Links</h2>
+<p>Bei direkten oder indirekten Verweisen auf fremde Internetseiten ("Links"), die außerhalb des Verantwortungsbereiches des Autors liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall in Kraft treten, in dem der Autor von den Inhalten Kenntnis hat und es ihm technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern. Der Autor erklärt hiermit ausdrücklich, dass zum Zeitpunkt der Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten erkennbar waren. Auf die aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der gelinkten/verknüpften Seiten hat der Autor keinerlei Einfluss. Deshalb distanziert er sich hiermit ausdrücklich von allen Inhalten aller gelinkten /verknüpften Seiten, die nach der Linksetzung verändert wurden. Diese Feststellung gilt für alle innerhalb des eigenen Internetangebots gesetzten Links und Verweise sowie für Fremdeinträge in vom Autor eingerichteten Gästebüchern, Diskussionsforen und Mailinglisten. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist. <br>
+    Das Landgericht Hamburg hat mit Urteil vom 12.05.1998 entschieden, dass man durch die Ausbringung eines Links die Inhalte der gelinkten Seite ggf. mit zu verantworten hat. Dies kann - so das Landgericht - nur dadurch verhindert werden, dass man sich ausdrücklich von diesen Inhalten distanziert. Auf den Webseiten vom "Sputnik-Kino" befinden sich Links zu anderen Seiten im Internet. Für all diese Links gilt: Die Betreiber dieser Seite haben keinerlei Einfluss auf die Gestaltung und die Inhalte der gelinkten Seiten. Deshalb distanzieren wir uns hiermit ausdrücklich von allen Inhalten aller gelinkten Seiten auf allen Webseiten inkl. aller Unterseiten. Diese Erklärung gilt für alle bei "Sputnik Kino" ausgebrachten Links und für alle Inhalte der Seiten, zu denen Links oder Button führen. <br>
+    Auch wenn Videos im „erweiterten Datenschutzmodus“ in eine Webseite eingebettet worden sind, nimmt der Browser eines Besuchers beim Aufruf dieser Seite dennoch automatisch mit dem DoubleClick-Werbenetzwerk Kontakt auf. Dieser Umstand bleibt problematisch. Darf man Google an dieser Stelle vertrauen und davon ausgehen, dass tatsächlich keine Informationen des Besuchers gespeichert werden – zumindest solange dieser das eingebettete Video nicht ablaufen lässt? Schon aus rein pragmatischen Gründen werden viele Website-Betreiber sich darauf verlassen und verbleibende Restrisiken in Kauf nehmen. <br>
+    n ihren Datenschutzerklärungen sollten sie dann aber zumindest darauf hinweisen, dass YouTube-Videos im „erweiterten Datenschutzmodus“ in ihren Seiten eingebettet sind. Die Nutzer sollten erfahren, dass der Aufruf der Seiten zu einer Verbindungsaufnahme mit YouTube und dem DoubleClick-Netzwerk führt. Man sollte ihnen auch nicht verschweigen, dass schon ein Klick auf das Video weitere Datenverarbeitungsvorgänge auslösen kann, auf die der Website-Betreiber keinen Einfluss mehr hat.</p>
+<br>
+<h2>Urheber- und Kennzeichenrecht</h2>
+<p>Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Grafiken, Tondokumente, Videosequenzen und Texte zu beachten, von ihm selbst erstellte Grafiken, Tondokumente, Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente, Videosequenzen und Texte zurückzugreifen. Alle innerhalb des Internetangebots genannten und ggf. durch Dritte geschützten Marken- und Warenzeichen unterliegen uneingeschränkt den Bestimmungen des jeweils gültigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigentümer. Allein aufgrund der bloßen Nennung ist nicht der Schluss zu ziehen, dass Markenzeichen nicht durch Rechte Dritter geschützt sind! Das Copyright für veröffentlichte, vom Autor selbst erstellte Objekte, bleibt allein beim Autor der Seiten. Eine Vervielfältigung oder Verwendung solcher Grafiken, Tondokumente, Videosequenzen und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne ausdrückliche Zustimmung des Autors nicht gestattet.</p>
+<br>
+<h2>Jugendschutz</h2>
+<p>Jugendschutzbeauftragte (gemäß § 7 Abs. 1 JMStV neu) <br>
+    Andrea Stosiek andrea@sputnik-kino.com </p>
+<br>
+<h2>Datenschutzerklärung</h2>
+<p>Diese Datenschutzerklärung klärt über die Art, den Umfang und Zwecke der Erhebung und Verwendung von Daten der Besucher und Nutzer (nachfolgend zusammenfassend bezeichnet als "Nutzer") durch Andrea Stosiek, Veranstaltungsservice & Medienagentur, Hasenheide 54, 10967 Berlin (nachfolgend "Anbieter") als datenschutzrechtlich verantwortliche Stelle auf. Bei Fragen zum Datenschutz erreichen Sie uns per E-Mail unter contact@freiluftkino-insel.de</p>
+<br>
+<h2>Informationspflicht gem. Art. 13 DSGVO (Verordnung (EU) 679/2016)</h2>
+<p>Verantwortlicher: Andrea Stosiek, Veranstaltungsservice & Medienagentur, Hasenheide 54, 10967 Berlin
+    Die auf dieser Website gesammelten Daten dienen ausschließlich der zur Kontaktaufnahme mittels des Newsletters mit Programminformationen und/oder Bereitstellung der Ticketkauf/-reservierungsfunktion. Die Daten werden nicht an Dritte weiter gegeben. <br>
+    Die für die Nutzung der Reservierungsfunktion eingegebenen personenbezogenen Daten werden bis zum Ablauf der Veranstaltung max. 1 Woche darüber hinaus vorgehalten.
+    Sie haben das Recht auf Auskunft über ihre personenbezogenen Daten, sowie das Recht auf Berichtigung oder Löschung oder Einschränkung der Verarbeitung. Ebenso können Sie der Verarbeitung widersprechen und haben das Recht auf Übertragung ihrer personenbezogenen Daten in strukturierter, maschinenlesbaren Form. Für alle genannten Rechte wenden Sie sich bitte an die Kontaktdaten des Verantwortlichen.
+    Sie haben darüber hinaus das Recht auf Beschwerde bei einer Aufsichtsbehörde:
+    Bundesbeauftragte für den Datenschutz und die Informationsfreiheit, Postfach 14 68, 53004 Bonn, www.datenschutz.bund.de</p>
+<br>
+<h2>Erhebung von Zugriffsdaten</h2>
+<p>Der Anbieter erhebt Daten über jeden Zugriff auf das Onlineangebot (automatisierte Server-Logfiles). Zu den Zugriffsdaten gehören Name der abgerufenen Webseite, Datei, Datum und Uhrzeit, übertragene Datenmenge, Meldung über erfolgreichen Abruf, Browsertyp und Browserversion, das Betriebssystem, Referrer URL (die zuvor besuchte Seite), IP-Adresse und der anfragende Provider. Der Anbieter verwendet die Protokolldaten ohne Zuordnung zur Person des Nutzers oder sonstiger Profilerstellung entsprechend den gesetzlichen Bestimmungen nur für statistische Auswertungen zum Zweck des Betriebs, der Sicherheit und der Fehlerbehebung des Onlineangebotes. Der Anbieter behält sich vor, die Protokolldaten nachträglich zu überprüfen bezüglicher einer etwaigen rechtswidrigen Nutzung, wenn aufgrund konkreter Anhaltspunkte der berechtigte Verdacht besteht.</p>
+<br>
+<h2>Erhebung und Nutzung personenbezogener Daten</h2>
+<p>Personenbezogene Daten werden vom Anbieter nur dann erhoben und genutzt, wenn dies gesetzlich erlaubt ist oder die Nutzer in die Datenerhebung einwilligen. In der Regel ist es für die Nutzer bei der Nutzung des Dienstes erkennbar welche Daten gespeichert werden. Diese Daten werden vertraulich behandelt, verschlüsselt übertragen und nicht an Dritte weitergegeben. Bei der Kontaktaufnahme mit dem Anbieter (per Kontaktformular oder E-Mail) werden die Angaben des Nutzers zwecks Bearbeitung der Anfrage sowie für den Fall, dass Anschlussfragen entstehen, gespeichert. Der Anbieter hat organisatorische, vertragliche und technische Sicherheitsmaßnahmen getroffen, um sicher zu stellen, dass die Vorschriften der Datenschutzgesetze eingehalten werden und zufällige oder vorsätzliche Manipulationen, Verlust, Zerstörung oder der Zugriff unberechtigter Personen verhindert wird.</p>
+<br>
+<h2>Datenweiterleitung an Dritte</h2>
+<p>Die Daten der Nutzer werden nur dann an Dritte weiter geleitet, wenn dies gesetzlich erlaubt ist oder ein Nutzer in die Weiterleitung eingewilligt hat. Das ist zum Beispiel der Fall wenn die Weiterleitung der Daten der Erfüllung vertraglicher Verpflichtungen gegenüber dem Nutzer dient (Ticketkauf). Oder falls die Daten von zuständigen Stellen wie Strafverfolgungsbehörden angefordert werden. Die personenbezogenen Daten der Nutzer werden keineswegs an Dritte zu Werbezwecken oder zwecks Erstellung von Nutzerprofilen verkauft oder weitergeleitet.
+</p>
+<br>
+<h2>Datenweiterleitung an Dritte (Online-Shop)</h2>
+<p>Die Erbringung der folgenden Leistungen: <br>
+    - Ticketkauf<br>
+    - Ticketreservierung<br>
+    - Gutscheinkauf<br>
+    - Kundenkartenaufladung<br>
+    - Shopbestellung<br>
+<br>
+    erfolgt im Namen unseres Partners:<br>
+    kinoheld GmbH<br>
+    Prinzregentenplatz 15<br>
+    D-81675 München<br>
+    www.kinoheld.de<br>
+    Sitz: München, Amtsgericht München, HRB: 200845
+    <br>
+    mit dem wir einen Vertrag zur Auftragsverarbeitung i.S.d. Art. 28 Datenschutz-Grundverordnung geschlossen haben. Alle kinoheld-Transaktionen unterliegen der kinoheld-Datenschutzerklärung (<a href="https://https://www.kinoheld.de/datenschutz" target="_blank">https://www.kinoheld.de/datenschutz)</a>. <br> Auf diese wird vor Abschluss jeder Transaktion zusätzlich gesondert hingewiesen.
+</p>
+<br>
+<h2>Cookies</h2>
+<p>Der Anbieter setzt im Rahmen seines Onlineangebotes "Cookies" ein. Cookies sind kleine Dateien, die auf dem Computer der Nutzer abgelegt werden und Informationen für Anbieter speichern können. Temporäre Cookies werden nach dem Schließen des Browsers gelöscht, permanente Cookies bleiben für einen vorgegebenen Zeitraum erhalten und können beim erneuten Aufruf des Onlineangebotes die gespeicherten Informationen zur Verfügung stellen. Cookies werden zum einen eingesetzt um die Nutzung des Dienstes zu erleichtern. So speichert ein Cookie die Sprachauswahl eines Nutzers. Der Nutzer kann auf den Einsatz der Cookies Einfluss nehmen. Die meisten Browser verfügen eine Option mit der das Speichern von Cookies eingeschränkt oder komplett verhindert wird. Der Anbieter bemüht sich das Onlineangebot so zu gestalten, dass der Einsatz von Cookies nicht notwendig ist.</p>
+<br>
+<h2>Social Media Daten - YouTube</h2>
+<p>Wir binden die Videos der Plattform “YouTube” des Anbieters Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, ein. Die Einbindung erfolgt im "erweiterten Datenschutzmodus" von YouTube um den Datenaustausch mit dieser Plattform zu minimieren, solange der Nutzer diese Videos nicht anschaut. Datenschutzerklärung: https://www.google.com/policies/privacy/, Opt-Out: https://adssettings.google.com/authenticated.
+    Onlinepräsenzen in Sozialen Medien
+    Wir unterhalten Onlinepräsenzen innerhalb sozialer Netzwerke und Plattformen, um mit unseren Nutzern zu kommunizieren und sie dort über unsere Veranstaltungen informieren zu können. Es handelt sich dabei u.a. um Facebook, Twitter und Fickr. Beim Aufruf der jeweiligen Plattformen gelten die Geschäftsbedingungen und die Datenverarbeitungsrichtlinien des jeweiligen Betreibers. Soweit nicht anders im Rahmen unserer Datenschutzerklärung angegeben, verarbeiten wir die Daten der Nutzer sofern diese mit uns innerhalb der sozialen Netzwerke und Plattformen kommunizieren, z.B. Beiträge auf unseren Onlinepräsenzen verfassen oder uns Nachrichten zusenden.
+    Widerruf, Änderungen, Berichtigungen und Aktualisierungen
+    Der Nutzer hat das Recht, auf Antrag unentgeltlich Auskunft zu erhalten über die personenbezogenen Daten, die vom Anbieter über ihn gespeichert wurden. Kontaktdaten finden sich im Impressum des Anbieters. Zusätzlich hat der Nutzer das Recht auf Berichtigung unrichtiger Daten, Sperrung und Löschung seiner personenbezogenen Daten, soweit keine gesetzliche Aufbewahrungspflicht entgegensteht.</p>
+<br>
+<h2>Änderungen der Datenschutzerklärung</h2>
+<p>Der Anbieter behält sich vor, die Datenschutzerklärung zu ändern, um sie an geänderte Rechtslage oder bei änderungen des Dienstes sowie der Datenverarbeitung anzupassen.
+    Rechtswirksamkeit dieses Haftungsausschlusses
+    Dieser Haftungsausschluss ist als Teil des Internetangebots zu betrachten, von dem aus auf diese Seite verwiesen wurde. Sofern Teile oder einzelne Formulierungen dieses Textes der geltenden Rechtslage nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die übrigen Teile des Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt.
+</p>
+<br>
+<h2>Copyright</h2>
+<p>Diese Seiten inklusive Texte, Grafiken, Scripts, etc. sind © Sputnik Kino. Jegliche Vervielfältigung, Speicherung in digitalen Datenbanken nur mit schriftlicher Genehmigung.</p>
+</body>
+
 <footer class="row">
     <div class="one-third column">
         <h2>Sputnik Kino</h2>
@@ -31,11 +183,10 @@
     </div>
     <div class="one-third column">
         <h2>Kooperationen</h2>
-        <img src="../img/europacinemas-logo.jpg" height="56" />
-        <img src="../img/agkino-logo.png" height="56" /> </br>
-        <img src="../img/indiekino-logo.png" height="112" />
+        <a href="https://www.europa-cinemas.org/en/"><img src="../img/europacinemas-logo.jpg" height="56" /></a>
+        <a href="https://www.agkino.de/"><img src="../img/agkino-logo.png" height="56" /></a></br>
+        <a href="https://www.indiekino.de/"><img src="../img/indiekino-logo.png" height="112" /></a>
         <img src="../img/freiluftkino-logo.png" height="112" />
     </div>
 </footer>
-</body>
 </html>

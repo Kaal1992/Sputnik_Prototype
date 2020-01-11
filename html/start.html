@@ -13,6 +13,10 @@
     <title>Sputnik Startseite</title>
 </head>
 <body class="container">
+<div class="flex">
+    <img src="../img/sputniklogo_final.png">
+</div>
+<br>
 <nav>
     <div class="one-third column" id="erster menuepunkt" onmouseleave="hidemenue(1)">
         <button onmouseover="showmenue(this, 1)">Sputnik</button>
@@ -44,8 +48,7 @@
         function showmenue(button, i) {
             var button = button.getBoundingClientRect();
             var subitemsDiv = document.getElementById("subitems"+i);
-            var pos = button.positionX - button.width;
-            subitemsDiv.style.left= pos;
+            subitemsDiv.style.left= "0px";
             subitemsDiv.style.top= button.top+button.height+"px";
             subitemsDiv.style.display="inline-block";
             var spans = subitemsDiv.getElementsByTagName('button');
@@ -59,11 +62,37 @@
         }
     </script>
 </nav>
+<img src="../img/startseitenbild_geschnitten.png" class="bigimage-responsive">
+<div class="row">
+    <div class="one-half column">
+        <div class="grauerhintergrund">
+            <h4>Heutige Filme</h4>
+            <div class="row">
+                <div class="one-third column">
+                    <img src="../img/The%20Farewell_OmU.JPG" width="140" ; height="80"> </br>
+                    <img src="../img/Joker.JPG" width="140" ; height="80"> </br>
+                </div>
+                <div class="one-third column">
+                    <h3 id="imprint"><a href="detail-film1.html">The Farewell (OmU)</a></h3>
+                    <p>17:00 Uhr</p>
+                    <h3>Joker</h3>
+                </div>
+                <div class="one-third">
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="one-half column">
+        <div class="hellgrauerhintergrund">
+            <h4>Heutige Specials</h4>
+            <h3>Filmtitel</h3>
+            <p>Uhrzeiten</p>
+        </div>
+    </div>
+</div>
 
-<h1 id="h1überschirft"> Heutige Filme</h1>
-<h2>Überschrift 20, bold</h2>
 <p>Normaler Text <a href="https://www.google.de" target="_blank">google</a></p>
-
 
 <footer class="row">
     <div class="one-third column">
@@ -88,5 +117,6 @@
         <img src="../img/freiluftkino-logo.png" height="112" />
     </div>
 </footer>
+
 </body>
 </html>
