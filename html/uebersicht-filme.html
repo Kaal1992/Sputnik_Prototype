@@ -2,9 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="author" content="Karl Fischer, Milena Uppendahl, Larissa Keitler, Patricia Giese">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/css.css">
+    <title>Programm</title>
 </head>
-<body>
+<body class="container">
+<nav>
+    <div class="one-third column" id="erster menuepunkt" onmouseleave="hidemenue(1)">
+        <button onmouseover="showmenue(this, 1)">Sputnik</button>
+        <div class="subitems" id="subitems1" >
+            <button>Geschichte</button><br/>
+            <button>Kontakt</button><br/>
+            <button>Räumlichkeiten mieten</button><br/>
+        </div>
+    </div>
+    <div class="one-third column" id="zweiter menuepunkt" onmouseleave="hidemenue(2)">
+        <button onmouseover="showmenue(this, 2)">Filme</button>
+        <div class="subitems" id="subitems2" >
+            <button>Programm</button><br/>
+            <button>Preisübersicht</button><br/>
+            <button>Ticket-Schnellkauf</button><br/>
+        </div>
+    </div>
+    <div class="one-third column" id="dritter menuepunkt" onmouseleave="hidemenue(3)">
+        <button onmouseover="showmenue(this, 3)">Events</button>
+        <div class="subitems" id="subitems3" >
+            <button>Open Screening</button><br/>
+            <button>Festivals</button><br/>
+            <button>Specials</button><br/>
+        </div>
+    </div>
+
+
+    <script>
+        function showmenue(button, i) {
+            var button = button.getBoundingClientRect();
+            var subitemsDiv = document.getElementById("subitems"+i);
+            subitemsDiv.style.left= "0px";
+            subitemsDiv.style.top= button.top+button.height+"px";
+            subitemsDiv.style.display="inline-block";
+            var spans = subitemsDiv.getElementsByTagName('button');
+            for (let item of spans){
+                item.style.width = button.width+"px";
+                item.style.margin = 0+"px";
+            }
+        }
+        function hidemenue (i) {
+            document.getElementById("subitems"+i).style.display="none";
+        }
+    </script>
+</nav>
+<h1>Programmübersicht</h1>
+<table>
+    <thead class="bigimage-responsive">
+    <tr>
+        <th>Montag</th>
+        <th>Dienstag</th>
+        <th>Mittwoch</th>
+        <th>Donnerstag</th>
+        <th>Freitag</th>
+        <th>Samstag</th>
+        <th>Sonntag</th>
+    </tr>
+    </thead>
+    <tbody class="bigimage-responsive">
+    <tr>
+        <td>
+            Film Titel hier einfügen
+        </td>
+        <td>Film 2</td>
+        <td>Film 3</td>
+        <td>Film 4</td>
+        <td>FIlm 5</td>
+        <td>Film 6</td>
+        <td>Film 7</td>
+    </tr>
+    <tr>
+        <td>
+            Film Titel hier einfügen
+        </td>
+        <td>Film 2</td>
+        <td>Film 3</td>
+        <td>Film 4</td>
+        <td>FIlm 5</td>
+        <td>Film 6</td>
+        <td>Film 7</td>
+    </tr>
+    <tr>
+        <td>
+            Film Titel hier einfügen
+        </td>
+        <td>Film 2</td>
+        <td>Film 3</td>
+        <td>Film 4</td>
+        <td>FIlm 5</td>
+        <td>Film 6</td>
+        <td>Film 7</td>
+    </tr>
+    </tbody>
+</table>
+    <div class="row">
+        <div class="one-third column">
+            <div class="one-half column">
+            <img src="../img/Joker.JPG">
+            </div>
+            <div class="one-half column">
+                <h3>The Joker</h3>
+                <p>972 steht Aretha Franklin im Zenit ihrer Karriere. Doch nach 20 Studioalben inklusive elf Nummer-eins-Hits beschließt die Queen of Soul zu ihren musikalischen Wurzeln zurückzukehren</p>
+            </div>
+        </div>
+        <div class="one-third column">
+            <div class="one-half column">
+                <img src="../img/Joker.JPG">
+            </div>
+            <div class="one-half column">
+                <h3>The Joker</h3>
+                <p>972 steht Aretha Franklin im Zenit ihrer Karriere. Doch nach 20 Studioalben inklusive elf Nummer-eins-Hits beschließt die Queen of Soul zu ihren musikalischen Wurzeln zurückzukehren</p>
+            </div>
+        </div>
+        <div class="one-third column">
+            <div class="one-half column">
+                <img src="../img/Joker.JPG">
+            </div>
+            <div class="one-half column">
+                <h3>The Joker</h3>
+                <p>972 steht Aretha Franklin im Zenit ihrer Karriere. Doch nach 20 Studioalben inklusive elf Nummer-eins-Hits beschließt die Queen of Soul zu ihren musikalischen Wurzeln zurückzukehren</p>
+            </div>
+        </div>
+    </div>
+
 <footer class="row">
     <div class="one-third column">
         <h2>Sputnik Kino</h2>
@@ -22,9 +154,9 @@
     </div>
     <div class="one-third column">
         <h2>Kooperationen</h2>
-        <a href="https://www.europa-cinemas.org/en/"target="_blank"><img src="../img/europacinemas-logo.jpg" height="56" /></a>
-        <a href="https://www.agkino.de/" target="_blank"><img src="../img/agkino-logo.png" height="56" /></a></br>
-        <a href="https://www.indiekino.de/" target="_blank"><img src="../img/indiekino-logo.png" height="112" /></a>
+        <a href="https://www.europa-cinemas.org/en/"><img src="../img/europacinemas-logo.jpg" height="56" /></a>
+        <a href="https://www.agkino.de/"><img src="../img/agkino-logo.png" height="56" /></a></br>
+        <a href="https://www.indiekino.de/"><img src="../img/indiekino-logo.png" height="112" /></a>
         <img src="../img/freiluftkino-logo.png" height="112" />
     </div>
 </footer>
