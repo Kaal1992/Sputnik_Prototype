@@ -56,12 +56,25 @@ footer p {
     color: var(--white-color);
 }
 
-/* Speziell für Impressumseite */
+/* Überschriften ohne Abstand für Impressumseite und Startseite */
 kontakt {
     font-weight: bold;
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 0;
+}
+filmtitel {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+spielzeiten {
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* Spezielles für Navigation Buttons */
