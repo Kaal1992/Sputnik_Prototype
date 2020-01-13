@@ -63,18 +63,28 @@ kontakt {
     margin-top: 0;
     margin-bottom: 0;
 }
-filmtitel {
-    font-weight: bold;
-    font-size: 16px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+.filmtitel {
+    margin: 0;
+
 }
 
-spielzeiten {
+.filmtitel a{
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.filmtitel a:hover {
+    color: var(--normalred-color);
+}
+
+.spielzeiten {
+    margin: 0;
+}
+.spielzeiten {
     font-weight: normal;
     font-size: 16px;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 /* Spezielles für Navigation Buttons */
@@ -126,6 +136,7 @@ footer a {
 #imprint a:hover {
     color: var(--normalred-color);
 }
+
 
 
 /* Responsive Bilder */
