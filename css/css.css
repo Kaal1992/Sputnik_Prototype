@@ -57,16 +57,30 @@ footer p {
 }
 
 /* Überschriften ohne Abstand für Impressumseite und Startseite */
-kontakt {
+
+.kontakt{
+    margin:0;
+}
+.kontakt {
     font-weight: bold;
     font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 0;
 }
+
+.specialtitel {
+    margin: 0;
+}
+
+.specialtitel {
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
 .filmtitel {
     margin: 0;
 
 }
+
 
 .filmtitel a{
     font-weight: bold;
