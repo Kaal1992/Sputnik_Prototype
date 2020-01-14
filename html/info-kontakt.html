@@ -15,13 +15,54 @@
 <body class="container">
 <br>
 <div class="flex">
-    <img src="../img/sputniklogo_final.png">
+    <a href="start.html"><img src="../img/sputniklogo_final.png" class="bigimage-responsive"></a>
 </div>
 <br>
 <nav>
-    <button class="one-third column">Sputnik</button>
-    <button class="one-third column">Filme</button>
-    <button class="one-third column">Events</button>
+    <div class="one-third column" id="menuepunkt1" onmouseleave="hidemenue(1)">
+        <button onmouseover="showmenue(this, 1)">Sputnik</button>
+        <div class="subitems" id="subitems1" >
+            <a href="seiten-leer.html"><button>Geschichte</button><br/></a>
+            <a href="info-kontakt.html"><button>Kontakt</button><br/></a>
+            <a href="seiten-leer.html"><button>Räumlichkeiten mieten</button><br/></a>
+        </div>
+    </div>
+    <div class="one-third column" id="menuepunkt2" onmouseleave="hidemenue(2)">
+        <button onmouseover="showmenue(this, 2)">Filme</button>
+        <div class="subitems" id="subitems2" >
+            <a href="uebersicht-filme.html"><button>Programm</button><br/></a>
+            <a href="info-preise.html"><button>Preisübersicht</button><br/></a>
+            <a href="seiten-leer.html"><button>Ticket-Schnellkauf</button><br/></a>
+        </div>
+    </div>
+    <div class="one-third column" id="menuepunkt3" onmouseleave="hidemenue(3)">
+        <button onmouseover="showmenue(this, 3)">Events</button>
+        <div class="subitems" id="subitems3" >
+            <a href="info-openscreening.html"><button>Open-Screening</button><br/></a>
+            <a href="uebersicht-festivals.html"><button>Festivals</button><br/></a>
+            <a href="uebersicht-specials.html"><button>Sonderveranstaltungen</button><br/></a>
+        </div>
+    </div>
+
+
+    <script>
+        function showmenue(el, i) {
+            var button = el.getBoundingClientRect();
+            var div = document.getElementById("menuepunkt"+i)
+            var subitemsDiv = document.getElementById("subitems"+i);
+            subitemsDiv.style.top= button.top+button.height+"px";
+            subitemsDiv.style.display="inline-block";
+            subitemsDiv.style.left = div.offsetLeft+"px";
+            var spans = subitemsDiv.getElementsByTagName('button');
+            for (let item of spans){
+                item.style.width = button.width+"px";
+            }
+        }
+        function hidemenue (i) {
+            document.getElementById("subitems"+i).style.display="none";
+        }
+
+    </script>
 </nav>
 <h1>Kontakt</h1>
 <div class="row">
