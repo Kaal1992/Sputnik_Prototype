@@ -42,6 +42,7 @@ h4 {
     text-align: center;
 }
 
+
 /* h2, h3 und p speziell für den Footer */
 footer h2 {
     color: var(--white-color);
@@ -55,12 +56,49 @@ footer p {
     color: var(--white-color);
 }
 
-/* h2 ohne Absatz für Impressumseite */
-kontakt {
+/* Überschriften ohne Abstand für Impressumseite und Startseite */
+
+.kontakt{
+    margin:0;
+}
+.kontakt {
     font-weight: bold;
     font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 0;
+}
+
+.specialtitel {
+    margin: 0;
+}
+
+.specialtitel {
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.filmtitel {
+    margin: 0;
+
+}
+
+
+.filmtitel a{
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.filmtitel a:hover {
+    color: var(--normalred-color);
+}
+
+.spielzeiten {
+    margin: 0;
+}
+.spielzeiten {
+    font-weight: normal;
+    font-size: 16px;
 }
 
 /* Spezielles für Navigation Buttons */
@@ -114,6 +152,7 @@ footer a {
 }
 
 
+
 /* Responsive Bilder */
 
 .bigimage-responsive {
@@ -143,4 +182,5 @@ footer a {
 }
 
 
+/* neue Kategorie! */
 
