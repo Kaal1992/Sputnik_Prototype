@@ -184,3 +184,16 @@ footer a {
 
 /* neue Kategorie! */
 
+thead {
+    background-color: #610D0F;
+    color: #F1F1F1;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tbody td:hover, tfoot td:hover {
+    background-color: #403E3E;
+    color: #F1F1F1;
+    border-collapse: collapse;
+}
+

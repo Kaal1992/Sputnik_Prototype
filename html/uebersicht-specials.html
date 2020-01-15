@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Karl Fischer, Milena Uppendahl, Larissa Keitler, Patricia Giese">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/grid.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/css.css">
-    <title>Sputnik Startseite</title>
+    <title>Programm</title>
 </head>
 <body class="container">
 <br>
@@ -19,49 +19,168 @@
 </div>
 <br>
 <nav>
-    <div class="one-third column" id="erster menuepunkt" onmouseleave="hidemenue(1)">
+    <div class="one-third column" id="menuepunkt1" onmouseleave="hidemenue(1)">
         <button onmouseover="showmenue(this, 1)">Sputnik</button>
         <div class="subitems" id="subitems1" >
-            <button>Geschichte</button><br/>
-            <button>Kontakt</button><br/>
-            <button>Räumlichkeiten mieten</button><br/>
+            <a href="seiten-leer.html"><button>Geschichte</button><br/></a>
+            <a href="info-kontakt.html"><button>Kontakt</button><br/></a>
+            <a href="seiten-leer.html"><button>Räumlichkeiten mieten</button><br/></a>
         </div>
     </div>
-    <div class="one-third column" id="zweiter menuepunkt" onmouseleave="hidemenue(2)">
+    <div class="one-third column" id="menuepunkt2" onmouseleave="hidemenue(2)">
         <button onmouseover="showmenue(this, 2)">Filme</button>
         <div class="subitems" id="subitems2" >
-            <button>Programm</button><br/>
-            <button>Preisübersicht</button><br/>
-            <button>Ticket-Schnellkauf</button><br/>
+            <a href="uebersicht-filme.html"><button>Programm</button><br/></a>
+            <a href="info-preise.html"><button>Preisübersicht</button><br/></a>
+            <a href="seiten-leer.html"><button>Ticket-Schnellkauf</button><br/></a>
         </div>
     </div>
-    <div class="one-third column" id="dritter menuepunkt" onmouseleave="hidemenue(3)">
+    <div class="one-third column" id="menuepunkt3" onmouseleave="hidemenue(3)">
         <button onmouseover="showmenue(this, 3)">Events</button>
         <div class="subitems" id="subitems3" >
-            <button>Open Screening</button><br/>
-            <button>Festivals</button><br/>
-            <button>Specials</button><br/>
+            <a href="info-openscreening.html"><button>Open-Screening</button><br/></a>
+            <a href="uebersicht-festivals.html"><button>Festivals</button><br/></a>
+            <a href="uebersicht-specials.html"><button>Sonderveranstaltungen</button><br/></a>
         </div>
     </div>
+
+
     <script>
-        function showmenue(button, i) {
-            var button = button.getBoundingClientRect();
+        function showmenue(el, i) {
+            var button = el.getBoundingClientRect();
+            var div = document.getElementById("menuepunkt"+i)
             var subitemsDiv = document.getElementById("subitems"+i);
-            subitemsDiv.style.left= "0px";
             subitemsDiv.style.top= button.top+button.height+"px";
             subitemsDiv.style.display="inline-block";
+            subitemsDiv.style.left = div.offsetLeft+"px";
             var spans = subitemsDiv.getElementsByTagName('button');
             for (let item of spans){
                 item.style.width = button.width+"px";
-                item.style.margin = 0+"px";
             }
         }
         function hidemenue (i) {
             document.getElementById("subitems"+i).style.display="none";
         }
+
     </script>
 </nav>
-<body>
+<br>
+<br>
+<h1>Sonderveranstaltungen</h1>
+
+
+<div class="row">
+    <div class="one-third column">
+        <img src="../img/specials-britihs.shorts-docuspecial.jfif" class="bigimage-responsive"><br>
+        <div class="row">
+            <div class="one-half column">
+                <h2>British Shorts - Docu Special</h2>
+                <b>Genre:</b> Documentary / Experimental / Animation<br>
+                <b>Regie:</b>diverse<br>
+                <b>Land:</b> UK<br>
+                <b>Jahr:</b> 2020<br>
+                <b>Länge:</b> 120 Min<br>
+                <b>FSK:</b>-</p>
+            </div>
+            <div class="one-half column">
+                <button type="button" class="container"><a href="seiten-leer.html">Infos</a></button>
+                <button type="button" class="container"><a href="ticket.html">Tickets</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="one-third column">
+        <img src="../img/specials-britihs.shorts-jeffzabal.jfif" class="bigimage-responsive"><br>
+        <div class="row">
+            <div class="one-half column">
+                <h2>Concert - Johnny Zabala</h2>
+                <b>Genre:</b>Oldschool, Delta Blues und
+                <br>Einflüsse von Neil Young bis Nick Cave<br>
+                <b>Land:</b> GER<br>
+                <b>Jahr:</b> 2018<br>
+                <b>Länge:</b> 105 Min<br>
+                </p>
+            </div>
+            <div class="one-half column">
+                <button type="button" class="container"><a href="seiten-leer.html">Infos</a></button>
+                <button type="button" class="container"><a href="ticket.html">Tickets</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="one-third column">
+        <img src="../img/specials-britihs.shorts-nichtseattle.jfif" class="bigimage-responsive"><br>
+        <div class="row">
+            <div class="one-half column">
+                <h2>Concert - Nichtseattle</h2>
+                <b>Land:</b> UK<br>
+                <b>Jahr:</b> 2020<br>
+                <b>Länge:</b> 90 Min<br>
+                </p>
+            </div>
+            <div class="one-half column">
+                <button type="button" class="container"><a href="seiten-leer.html">Infos</a></button>
+                <button type="button" class="container"><a href="ticket.html">Tickets</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="row">
+    <div class="one-third column">
+        <img src="../img/specials-british.shorts-Glassbergandthedisasters.jfif" class="bigimage-responsive"><br>
+        <div class="row">
+            <div class="one-half column">
+                <h2>Concert - Glassberg and the Disasters</h2>
+                <b>Genre:</b> Indie-pop<br>
+                <b>Artist:</b> Rachel Glassberg and her band
+                <b>Land:</b> US<br>
+                <b>Jahr:</b> 2020<br>
+                <b>Länge:</b> 105 Min<br>
+            </div>
+            <div class="one-half column">
+                <button type="button" class="container"><a href="seiten-leer.html">Infos</a></button>
+                <button type="button" class="container"><a href="ticket.html">Tickets</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="one-third column">
+        <img src="../img/specials-british.shorts-thevisualworldsofweirdcore.jfif" class="bigimage-responsive"><br>
+        <div class="row">
+            <div class="one-half column">
+                <h2>The visual Worlds of weirdcore</h2>
+                <b>Genre:</b>-<br>
+                <b>Regie:</b>Weirdcore<br>
+                <b>Land:</b> UK<br>
+                <b>Jahr:</b> 2019<br>
+                <b>Länge:</b> 90 Min<br>
+                </p>
+            </div>
+            <div class="one-half column">
+                <button type="button" class="container"><a href="seiten-leer.html">Infos</a></button>
+                <button type="button" class="container"><a href="ticket.html">Tickets</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="one-third column">
+        <img src="../img/specials-british.shorts-workshop.jfif" class="bigimage-responsive"><br>
+        <div class="row">
+            <div class="one-half column">
+                <h2>Workshop</h2>
+                <b>Dozenten</b>John Digance und Dave Green<br>
+                <b>Wichtig:</b>Nur nach Anmeldung<br>
+                <b>Länge:</b>240 Min<br>
+                </p>
+            </div>
+            <div class="one-half column">
+                <button type="button" class="container"><a href="seiten-leer.html">Infos</a></button>
+                <button type="button" class="container"><a href="ticket.html">Tickets</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
 <footer class="row">
     <div class="one-third column">
         <h2>Sputnik Kino</h2>
@@ -79,9 +198,9 @@
     </div>
     <div class="one-third column">
         <h2>Kooperationen</h2>
-        <a href="https://www.europa-cinemas.org/en/"target="_blank"><img src="../img/europacinemas-logo.jpg" height="56" /></a>
-        <a href="https://www.agkino.de/" target="_blank"><img src="../img/agkino-logo.png" height="56" /></a></br>
-        <a href="https://www.indiekino.de/" target="_blank"><img src="../img/indiekino-logo.png" height="112" /></a>
+        <a href="https://www.europa-cinemas.org/en/"><img src="../img/europacinemas-logo.jpg" height="56" /></a>
+        <a href="https://www.agkino.de/"><img src="../img/agkino-logo.png" height="56" /></a></br>
+        <a href="https://www.indiekino.de/"><img src="../img/indiekino-logo.png" height="112" /></a>
         <img src="../img/freiluftkino-logo.png" height="112" />
     </div>
 </footer>
