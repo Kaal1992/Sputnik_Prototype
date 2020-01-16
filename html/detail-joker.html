@@ -2,9 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="author" content="Karl Fischer, Milena Uppendahl, Larissa Keitler, Patricia Giese">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/css.css">
+    <title>Joker</title>
 </head>
-<body>
+<body class="container">
+<br>
+<div class="flex">
+    <a href="start.html"><img src="../img/sputniklogo_final.png" class="bigimage-responsive"></a>
+</div>
+<br>
+<nav>
+    <div class="one-third column" id="menuepunkt1" onmouseleave="hidemenue(1)">
+        <button onmouseover="showmenue(this, 1)">Sputnik</button>
+        <div class="subitems" id="subitems1" >
+            <a href="seiten-leer.html"><button>Geschichte</button><br/></a>
+            <a href="info-kontakt.html"><button>Kontakt</button><br/></a>
+            <a href="seiten-leer.html"><button>Räumlichkeiten mieten</button><br/></a>
+        </div>
+    </div>
+    <div class="one-third column" id="menuepunkt2" onmouseleave="hidemenue(2)">
+        <button onmouseover="showmenue(this, 2)">Filme</button>
+        <div class="subitems" id="subitems2" >
+            <a href="uebersicht-filme.html"><button>Programm</button><br/></a>
+            <a href="info-preise.html"><button>Preisübersicht</button><br/></a>
+            <a href="seiten-leer.html"><button>Ticket-Schnellkauf</button><br/></a>
+        </div>
+    </div>
+    <div class="one-third column" id="menuepunkt3" onmouseleave="hidemenue(3)">
+        <button onmouseover="showmenue(this, 3)">Events</button>
+        <div class="subitems" id="subitems3" >
+            <a href="info-openscreening.html"><button>Open-Screening</button><br/></a>
+            <a href="uebersicht-festivals.html"><button>Festivals</button><br/></a>
+            <a href="uebersicht-specials.html"><button>Sonderveranstaltungen</button><br/></a>
+        </div>
+    </div>
+
+
+    <script>
+        function showmenue(el, i) {
+            var button = el.getBoundingClientRect();
+            var div = document.getElementById("menuepunkt"+i)
+            var subitemsDiv = document.getElementById("subitems"+i);
+            subitemsDiv.style.top= button.top+button.height+"px";
+            subitemsDiv.style.display="inline-block";
+            subitemsDiv.style.left = div.offsetLeft+"px";
+            var spans = subitemsDiv.getElementsByTagName('button');
+            for (let item of spans){
+                item.style.width = button.width+"px";
+            }
+        }
+        function hidemenue (i) {
+            document.getElementById("subitems"+i).style.display="none";
+        }
+
+    </script>
+
+
+        <div id=specialtitel> Joker</div>
+        <img src="../img/Joker.JPG"width="294" ; height="417">
+      <p> Ressigieur: Todd Phillips <br>
+      Schauspieler: Joaquin Phoenix, Robert De Niro <br>
+      Filmlänge: 122 Minuten <br>
+      Jahr: 2019 <br>
+      Land: Vereinigte Staaten<br>
+      FSK: 16 <br></p>
+
+<img src="../img/Spielzeit_platzhalter.JPEG"width="712" ; height="338">
+
+<p>Jeder kennt Joker, den erbitterten Erzfeind und schlimmsten Gegner, der Batman erbarmungslos zusetzt, aber keiner weiß, warum das geschah. Eigentlich war Arthur Fleck früher ein Junge wie viele andere, er war etwas eigenbrötlerisch und sein Lachen klang ziemlich erschreckend, doch nichts deutete darauf hin, dass er das Böse in sich trug, welches er später zu seinem Lebensinhalt machte. Doch der Spott und die Demütigungen, denen er sogar in seinen therapeutischen Sitzungen ausgesetzt war, ließen in seiner Seele eine finstere Saat reifen....</p>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OyTeEXmM_Mc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
 <footer class="row">
     <div class="one-third column">
         <h2>Sputnik Kino</h2>
@@ -28,5 +107,6 @@
         <img src="../img/freiluftkino-logo.png" height="112" />
     </div>
 </footer>
+
 </body>
 </html>
