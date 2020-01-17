@@ -42,6 +42,26 @@ h4 {
     text-align: center;
 }
 
+/* h5 speziell für Uhrzeit bei Spielzeiten in Detailseite*/
+h5 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* smallp speziell für Filmangaben(Regisseur, Schauspieler etc.) bei Detailseite*/
+smallp {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+/* rp = red p für Datum auf Detailseite*/
+.rp {
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--normalred-color);
+}
+
 
 /* h2, h3 und p speziell für den Footer */
 footer h2 {
@@ -80,7 +100,6 @@ footer p {
     margin: 0;
 
 }
-
 
 .filmtitel a{
     font-weight: bold;
