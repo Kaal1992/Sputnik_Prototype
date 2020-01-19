@@ -21,6 +21,13 @@ h2 {
     font-weight: bold;
     font-size: 20px;
 }
+
+h6 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0rem
+}
+
 h3 {
     font-weight: bold;
     font-size: 16px;
@@ -130,9 +137,14 @@ nav button {
     color: var(--white-color);
     background-color: var(--darkgrey-color);
     width: 100%;
-
 }
+
 nav button:hover {
+    color: var(--white-color);
+    background-color: var(--normalred-color);
+}
+
+.redbutton {
     color: var(--white-color);
     background-color: var(--normalred-color);
 }
@@ -206,7 +218,7 @@ footer a {
 }
 
 
-/* neue Kategorie! */
+/* Tabelle */
 
 thead {
     background-color: #610D0F;
@@ -221,3 +233,6 @@ tbody td:hover, tfoot td:hover {
     border-collapse: collapse;
 }
 
+.mitte {
+    text-align: center;
+}
