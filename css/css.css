@@ -206,7 +206,7 @@ footer a {
 }
 
 
-/* neue Kategorie! */
+/* Tabelle */
 
 thead {
     background-color: #610D0F;
@@ -221,3 +221,6 @@ tbody td:hover, tfoot td:hover {
     border-collapse: collapse;
 }
 
+.mitte {
+    text-align: center;
+}
